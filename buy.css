@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f5f0ff;
+    color: #374151;
+    padding: 16px;
+    min-height: 100vh;
+}
+
+.checkout-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(24px, 6vw, 40px);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    color: #7c3aed;
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(124,58,237,0.1);
+    border: 1.5px solid #ede9fe;
+}
+
+section h2 {
+    font-size: clamp(16px, 4vw, 20px);
+    margin-bottom: 18px;
+    border-left: 5px solid #7c3aed;
+    padding-left: 12px;
+    color: #1f1235;
+    font-weight: 700;
+}
+
+section div {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1.5px solid #e5e7eb;
+    outline: none;
+    background: #fafafa;
+    color: #1f1235;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+input::placeholder, textarea::placeholder { color: #9ca3af; }
+
+input:focus, textarea:focus, select:focus {
+    border-color: #7c3aed;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(124,58,237,0.12);
+}
+
+/* Payment options */
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1.5px solid #ede9fe;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.payment-option:hover {
+    border-color: #7c3aed;
+    background: #f5f0ff;
+}
+.payment-option input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    border-radius: 50%;
+    border: 2px solid #c4b5fd;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.payment-option input[type="radio"]:checked {
+    background: #7c3aed;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124,58,237,0.2);
+}
+.payment-option label {
+    cursor: pointer;
+    font-size: 15px;
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Order summary */
+section p {
+    text-align: left;
+    margin-bottom: 8px;
+    color: #4b5563;
+    font-size: 15px;
+}
+section strong {
+    color: #7c3aed;
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 800;
+}
+
+/* Place order button */
+button#orderBtn {
+    width: 100%;
+    padding: 15px;
+    font-size: clamp(15px, 4vw, 17px);
+    font-weight: 800;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: #fff;
+    transition: 0.3s;
+    box-shadow: 0 6px 20px rgba(124,58,237,0.4);
+    letter-spacing: 0.5px;
+}
+button#orderBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(124,58,237,0.5);
+}

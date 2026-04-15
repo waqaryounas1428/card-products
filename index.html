@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZUNIQUE | Fashion Store</title>
+    <link rel="stylesheet" href="./new.css">
+</head>
+
+<body>
+
+    <!-- PROMO TICKER -->
+    <div class="promo-ticker">
+        <div class="ticker-track">
+            🔥 FREE SHIPPING on orders above Rs.2000 &nbsp;&nbsp;|&nbsp;&nbsp;
+            ✨ New Arrivals Every Week &nbsp;&nbsp;|&nbsp;&nbsp;
+            🎁 Use code <strong>ZUNIQUE10</strong> for 10% off &nbsp;&nbsp;|&nbsp;&nbsp;
+            🚚 Cash on Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp;
+            💜 Premium Quality Guaranteed &nbsp;&nbsp;|&nbsp;&nbsp;
+            🔥 FREE SHIPPING on orders above Rs.2000 &nbsp;&nbsp;|&nbsp;&nbsp;
+            ✨ New Arrivals Every Week &nbsp;&nbsp;|&nbsp;&nbsp;
+            🎁 Use code <strong>ZUNIQUE10</strong> for 10% off &nbsp;&nbsp;|&nbsp;&nbsp;
+            🚚 Cash on Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp;
+            💜 Premium Quality Guaranteed
+        </div>
+    </div>
+
+    <!-- TOP HEADER -->
+    <header class="top-header">
+        <div class="bata-logo">ZUNIQUE</div>
+        <div class="cart-icon" onclick="openOrderPage()">
+            🛒 <span class="cart-badge" id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li>SNEAKER FEST</li>
+      <li>MEN</li>
+      <li>WOMEN</li>
+      <li>KIDS</li>
+      <li>BAGS</li>
+      <li>ACCESSORIES</li>
+      <li>SUPER SALE</li>
+      <li>BATA CLUB</li>
+      <li>B-MAG</li>
+      <li>TRACK ORDER</li>
+    </ul>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <span class="search-icon">🔍</span>
+            </div>
+    </nav>
+
+    <!-- recent-order -->
+    <div class="recent-order">
+        <h2>🛒 Your Recent Order</h2>
+        <button id="show-order-btn" onclick="openOrderPage()">Show Recent Order</button>
+        <div id="order-summary" style="display:none; margin-top:10px;"></div>
+    </div>
+
+
+
+
+    <!-- DELIVERY INFO -->
+    <div class="delivery-bar">
+        Delivery charges: Rs.100 will be charged on all orders
+    </div>
+
+
+    <section class="hero-section">
+        <!-- Hero Image -->
+        <img src="./baner/pexels-karola-g-5650049.jpg" alt="Winter Sale Banner" class="hero-image">
+
+        <!-- Sale Banner Overlay -->
+        <div class="sale-banner">
+            <div class="subtitle">WINTER CLEARANCE</div>
+            <h1 class="main-sale">SALE</h1>
+            <div class="discount">UP TO 70% OFF</div>
+            <div class="footer-text">FOOTWEAR & ACCESSORIES — IN-STORE & ONLINE</div>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </section>
+
+
+    <section class="main-class">
+        <div class="first-handing">
+            <h1>Shop By Most Popular Dress </h1>
+            <h3></h3>
+        </div>
+
+
+        <div class="first-row">
+
+            <div class="first-box">
+                <div class="new">NEW</div>
+                <img src="./image/New folder/WhatsApp Image 2026-04-15 at 8.34.49 PM.jpeg"
+                    alt="">
+                <h4>Sharara Suits</h4>
+                <p class="price">Rs. 3,500</p>
+                <p class="discount-tag">up to 50% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="first-box">
+                <div class="new">NEW</div>
+                <img src="./image/New folder/WhatsApp Image 2026-04-15 at 8.36.48 PM (1).jpeg" alt="">
+                <h4>Lawn '2025</h4>
+                <p class="price">Rs. 2,800</p>
+                <p class="discount-tag">up to 50% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="first-box">
+                <div class="new">NEW</div>
+                <img src="./image/New folder/WhatsApp Image 2026-04-15 at 8.36.48 PM.jpeg" alt="">
+                <h4> 3 Piece Embroidered</h4>
+                <p class="price">Rs. 7,200</p>
+                <p class="discount-tag">up to 70% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="first-box">
+                <div class="new">NEW</div>
+                <img src="./image/New folder/WhatsApp Image 2026-04-15 at 8.36.49 PM.jpeg" alt="">
+                <h4> Embroidered Suit</h4>
+                <p class="price">Rs. 5,500</p>
+                <p class="discount-tag">up to 70% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="second-handing">
+            <h1>NEW SALE</h1>
+        </div>
+
+
+        <div class="button">
+            <button>Unstich</button>
+            <button>Stich</button>
+            <button>Men</button>
+            <button>Women</button>
+            <button>WATCH</button>
+            <button>Kid</button>
+            <button>SHOES</button>
+        </div>
+
+
+        <div class="second-row">
+
+            <div class="second-box">
+                <div class="span">NEW</div>
+                <img src="./image/cropped_image-173988301287229_95e86378-487c-4358-afea-e5f38f58a3ed.webp" alt="">
+                <h3>Winter Unstich '24</h3>
+                <p class="price">Rs. 4,200</p>
+                <p class="discount-tag">Special offer</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="second-box">
+                <div class="span">NEW</div>
+                <img src="./image/cropped_image-174038773611086_67e160cf-28e0-4037-842f-f7a52089e2cc.webp" alt="">
+                <h3>Lawn '2025</h3>
+                <p class="price">Rs. 3,100</p>
+                <p class="discount-tag">up to 12% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="second-box">
+                <div class="span">NEW</div>
+                <img src="./image/cropped_image-174110978754386_130378e7-cb31-4a6d-a02a-cf192d3329b3.webp" alt="">
+                <h3>Women Dress</h3>
+                <p class="price">Rs. 6,800</p>
+                <p class="discount-tag">New Arrival</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="second-box">
+                <div class="span">NEW</div>
+                <img src="./image/large-_0005_Screenshot_20230822_183829_Gallery_c96126c0-6b51-4bd0-8f6f-88ac3be7afe4.webp"
+                    alt="">
+                <h3>Women Dress</h3>
+                <p class="price">Rs. 9,500</p>
+                <p class="discount-tag">up to 35% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-handing">
+            <h1>MEN STICH DRESS</h1>
+            <h4>NEW SALE</h4>
+        </div>
+
+        <div class="third-row">
+
+            <div class="third-box">
+                <!-- <div class="span">NEW</div> -->
+                <img src="./image/PSA_ These kurta looks will get you endless….jpg" alt="">
+                <h3>Winter Unstich '24</h3>
+                <p class="price">Rs. 4,800</p>
+                <p class="discount-tag">up to 20% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="third-box">
+                <div class="span">NEW</div>
+                <img src="./image/WILLKOMMEN IN MEINEM SHOP STYLEASHRA Gönnen Sie….jpg" alt="">
+                <h3>Lawn '2025</h3>
+                <p class="price">Rs. 12,000</p>
+                <p class="discount-tag">up to 50% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="third-box">
+                <div class="span">NEW</div>
+                <img src="./image/Premium Blended Fabric  Color Zinc Italian Thread….jpg" alt="">
+                <h3>Special Dress</h3>
+                <p class="price">Rs. 18,500</p>
+                <p class="discount-tag">up to 16% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="third-box">
+                <!-- <div class="span">NEW</div> -->
+                <img src="./image/firangi-yarn-menswear-brand-hEuVOYuq1l4-unsplash.jpg" alt="">
+                <h3>Green Dress</h3>
+                <p class="price">Rs. 8,900</p>
+                <p class="discount-tag">up to 32% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-handing">
+            <h1>MEN WATCHES</h1>
+            <h4>NEW ARRIVAL</h4>
+        </div>
+
+        <div class="four-row">
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./watch/download (4).jpg" alt="">
+                <h3>Apple Watch</h3>
+                <p class="price">Rs. 45,000</p>
+                <p class="discount-tag">up to 14% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <!-- <div class="span">NEW</div> -->
+                <img src="./watch/Minimalist stainless steel dress watch – sleek bracelet design for men’s formal & casual looks.jpg"
+                    alt="">
+                <h3>Zero Watch</h3>
+                <p class="price">Rs. 22,000</p>
+                <p class="discount-tag">up to 15% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <!-- <div class="span">NEW</div> -->
+                <img src="./watch/Phantom Black_ minimalismo que eleva seu estilo_ Com design icônico em policarbonato Soft-Touch e acabamento preto profundo, este relógio é mais que um acessório — é a marca de quem voa alto, unindo sofisti.jpg"
+                    alt="">
+                <h3>Luma Watch</h3>
+                <p class="price">Rs. 31,500</p>
+                <p class="discount-tag">up to 50% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./watch/Smart Watch Techwear - Blue.jpg" alt="">
+                <h3>Smart Watch</h3>
+                <p class="price">Rs. 15,800</p>
+                <p class="discount-tag">up to 20% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="third-handing">
+            <h1>MEN SHOES</h1>
+            <h4>NEW ARRIVAL</h4>
+        </div>
+
+        <div class="four-row">
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./shoes/premium quality sneakers.jpg" alt="">
+                <h3>Converse Chuck Taylor</h3>
+                <p class="price">Rs. 11,200</p>
+                <p class="discount-tag">up to 20% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./shoes/Men's Non-Slip Embossed Letterprint Color Block….jpg" alt="">
+                <h3>Puma SuedeS</h3>
+                <p class="price">Rs. 8,500</p>
+                <p class="discount-tag">up to 10% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <!-- <div class="span">NEW</div> -->
+                <img src="./shoes/Men's Fashionable Casual Low-Top Sneakers.jpg" alt="">
+                <h3>Adidas Superstar</h3>
+                <p class="price">Rs. 14,000</p>
+                <p class="discount-tag">up to 30% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <!-- <div class="span">NEW</div> -->
+                <img src="./shoes/download (4).jpg" alt="">
+                <h3>Nike Air Max</h3>
+                <p class="price">Rs. 19,500</p>
+                <p class="discount-tag">up to 30% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW ROW — WOMEN ACCESSORIES -->
+        <div class="third-handing">
+            <h1>WOMEN ACCESSORIES</h1>
+            <h4>HOT DEALS</h4>
+        </div>
+
+        <div class="four-row">
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./image/cropped_image-173988301287229_95e86378-487c-4358-afea-e5f38f58a3ed.webp" alt="Women Bag">
+                <h3>Stylish Handbag</h3>
+                <p class="price">Rs. 6,200</p>
+                <p class="discount-tag">up to 40% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./image/cropped_image-174038773611086_67e160cf-28e0-4037-842f-f7a52089e2cc.webp" alt="Women Dress">
+                <h3>Summer Collection</h3>
+                <p class="price">Rs. 3,800</p>
+                <p class="discount-tag">up to 25% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./image/cropped_image-174110978754386_130378e7-cb31-4a6d-a02a-cf192d3329b3.webp" alt="Women Suit">
+                <h3>Formal Suit</h3>
+                <p class="price">Rs. 27,000</p>
+                <p class="discount-tag">up to 35% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+            <div class="four-box">
+                <div class="span">NEW</div>
+                <img src="./image/large-_0005_Screenshot_20230822_183829_Gallery_c96126c0-6b51-4bd0-8f6f-88ac3be7afe4.webp" alt="Women Dress">
+                <h3>Party Wear</h3>
+                <p class="price">Rs. 16,500</p>
+                <p class="discount-tag">up to 45% off</p>
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy" onclick="goToBuyPage()">Buy</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Subscribe to our ZUNIQUE</h2>
+            <p>Stay up to date with the latest news, products and exclusive offers.</p>
+
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <small>
+                By subscribing, you agree to receive marketing emails from us.
+            </small>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <!-- FOOTER TOP -->
+            <div class="footer-top">
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>Email: info@wokZUNIQUE.com.au</p>
+                    <p>Phone: 0092-333-820-1428</p>
+                </div>
+
+                <div>
+                    <h4>Warehouse Address</h4>
+                    <p>Unit 11/6-8 Allen Place</p>
+                    <p>Wetherill Park NSW 2164</p>
+                </div>
+
+                <div>
+                    <h4>Opening Times</h4>
+                    <p>Monday – Friday</p>
+                    <p>10:00 AM – 4:00 PM</p>
+                </div>
+
+                <div>
+                    <h4>About ZUNIQUE</h4>
+                    <p>
+                        We offer premium fashion including dresses, watches, and shoes
+                        for men, women, and kids at the best prices.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer-bottom">
+
+                <div>
+                    <h4>Product Categories</h4>
+                    <a href="#">Women Dresses</a>
+                    <a href="#">Men Kurtas</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Shoes</a>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Blogs</a>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <a href="#">Warranty Policy</a>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Sitemap</a>
+                </div>
+
+                <div>
+                    <h4>Follow Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+
+                <div>
+                    <h4>Accepted Payments</h4>
+                    <div class="payment-icons">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                            alt="Mastercard">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
+                            alt="American Express">
+                        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Discover_Card_logo.svg" alt="Discover">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/PayPal_logo.svg" alt="PayPal"> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="footer-copy">
+                <p>© 2026 ZUNIQUE. All rights reserved.</p>
+            </div>
+
+        </footer>
+
+
+    </section>
+
+    <script src="./index.js"></script>
+    <script>
+        // Default order (first time only)
+        if (!localStorage.getItem("order")) {
+            localStorage.setItem("order", JSON.stringify({
+                product: "Running Shoes",
+                price: 5000,
+                status: "Confirmed"
+            }));
+        }
+
+        function openOrderPage() {
+            window.location.href = "order-details.html";
+        }
+
+        // ===== CART COUNTER =====
+        let cartCount = parseInt(localStorage.getItem("cartCount") || "0");
+        document.getElementById("cart-count").innerText = cartCount;
+
+        function addToCart(btn) {
+            cartCount++;
+            localStorage.setItem("cartCount", cartCount);
+            document.getElementById("cart-count").innerText = cartCount;
+            showToast("Item added to cart 🛒");
+        }
+
+        // Attach addToCart to all add-cart buttons
+        document.querySelectorAll(".add-cart").forEach(btn => {
+            btn.addEventListener("click", () => addToCart(btn));
+        });
+
+        // ===== TOAST NOTIFICATION =====
+        function showToast(msg) {
+            const toast = document.getElementById("toast");
+            toast.innerText = msg;
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 2800);
+        }
+
+        // ===== BACK TO TOP =====
+        const topBtn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            topBtn.style.display = window.scrollY > 400 ? "flex" : "none";
+        });
+        topBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // ===== ACTIVE FILTER BUTTON =====
+        document.querySelectorAll(".button button").forEach(btn => {
+            btn.addEventListener("click", function () {
+                document.querySelectorAll(".button button").forEach(b => b.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    </script>
+
+    <!-- TOAST -->
+    <div id="toast"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" title="Back to top">↑</button>
+
+</body>
+
+</html>

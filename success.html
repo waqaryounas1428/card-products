@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful | ZUNIQUE</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <div class="success-card">
+
+        <!-- HEADER -->
+        <div class="success-header">
+            <div class="check-icon">✔</div>
+            <h1>Order Placed!</h1>
+            <p>Thank you! Review your details below and confirm.</p>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="order-details">
+            <div class="detail-row">
+                <span class="detail-label">👤 Name</span>
+                <strong id="s-name"></strong>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">📧 Email</span>
+                <strong id="s-email"></strong>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">📞 Phone</span>
+                <strong id="s-phone"></strong>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">🏠 Address</span>
+                <strong id="s-address"></strong>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">🏙️ City</span>
+                <strong id="s-city"></strong>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">📮 Postal Code</span>
+                <strong id="s-postal"></strong>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">💳 Payment</span>
+                <strong id="s-payment"></strong>
+            </div>
+            <div class="detail-row total-row">
+                <span class="detail-label">🧾 Total Amount</span>
+                <strong class="total-amount">Rs. 5,300</strong>
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="action-buttons">
+            <button class="btn back-btn" onclick="window.location.href='index.html'">← Back to Shop</button>
+            <button class="btn confirm" onclick="confirmOrder()">✅ Confirm Order</button>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // Security Check
+    let data = JSON.parse(localStorage.getItem("orderData"));
+
+    if (!data) {
+        window.location.href = "index.html";
+    }
+
+    // Show Data
+    document.getElementById("s-name").innerText    = data.name    || "N/A";
+    document.getElementById("s-email").innerText   = data.email   || "N/A";
+    document.getElementById("s-phone").innerText   = data.phone   || "N/A";
+    document.getElementById("s-address").innerText = data.address || "N/A";
+    document.getElementById("s-city").innerText    = data.city    || "N/A";
+    document.getElementById("s-postal").innerText  = data.postal  || "N/A";
+    document.getElementById("s-payment").innerText = data.payment || "N/A";
+
+    // Confirm Order
+    function confirmOrder() {
+        localStorage.setItem("recentOrder", JSON.stringify(data));
+        localStorage.removeItem("orderData");
+        alert("🎉 Your order has been confirmed!");
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+</html>
